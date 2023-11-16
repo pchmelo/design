@@ -8,6 +8,8 @@ public abstract class Bar {
     abstract public void startHappyHour();
     abstract public void endHappyHour();
 
+    abstract public void order(StringDrink drink, StringRecipe recipe);
+
     public void addObserver(BarObserver observer) {
         this.observers.add(observer);
     }
