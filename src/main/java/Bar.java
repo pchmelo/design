@@ -1,7 +1,8 @@
+import java.util.ArrayList;
 import java.util.List;
 
 public abstract class Bar {
-    protected List<BarObserver> observers;
+    protected List<BarObserver> observers = new ArrayList<>();
 
     abstract public boolean isHappyHour();
     abstract public void startHappyHour();
