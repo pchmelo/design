@@ -13,12 +13,12 @@ public class SmartStrategy implements OrderingStrategy{
             recipes.add(recipe);
         }
     }
-    public void happyHourStarted(Bar bar){
+    public void happyHourStarted(StringBar bar){
         for(int i = 0; i < drinks.size();i++){
             bar.order(drinks.get(i), recipes.get(i));
         }
     }
-    public void happyHourEnded(Bar bar){
+    public void happyHourEnded(StringBar bar){
 
     }
 }

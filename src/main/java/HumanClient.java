@@ -8,12 +8,12 @@ public class HumanClient implements Client{
 
     @Override
     public void happyHourStarted(Bar bar){
-        strategy.happyHourStarted(bar);
+        strategy.happyHourStarted((StringBar)bar);
     }
 
     @Override
     public void happyHourEnded(Bar bar){
-        strategy.happyHourEnded(bar);
+        strategy.happyHourEnded((StringBar)bar);
     }
 
     @Override
